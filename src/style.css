@@ -1,0 +1,8 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to top right, #201023, #000000);
+  color: white;
+}
