@@ -6,3 +6,7 @@ body {
   background: linear-gradient(to top right, #201023, #000000);
   color: white;
 }
+
+h1 {
+  font-family: "Source Code Pro", serif;
+}
