@@ -1,12 +1,77 @@
 html {
-  height: 100%;
+  background: linear-gradient(to top right, #201023, #000000);
+  min-height: 100vh;
+  font-size: 16px;
+  color: white;
+  box-sizing: border-box;
 }
 
-body {
-  background: linear-gradient(to top right, #201023, #000000);
-  color: white;
+/* Hero Section */
+h1,
+h2,
+h4 {
+  font-family: "Source Code Pro", serif;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 h1 {
-  font-family: "Source Code Pro", serif;
+  font-size: 3.5rem;
+  letter-spacing: 5%;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-family: "Inter", serif;
+  font-size: 1.3rem;
+  line-height: 150%;
+  opacity: 50%;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin-top: 90px;
+}
+
+section.hero {
+  padding: 140px 140px 0;
+  max-width: 1160px;
+  margin: 0 auto;
+  min-height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 500px;
+  z-index: 1;
+}
+
+.hero-image-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 50px; /* Center align the image */
+}
+
+.hero-image-wrapper img {
+  width: 700px;
+}
+
+.hero .line {
+  display: inline-block;
+  width: 99px;
+  height: 1px;
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 90px 0;
 }
