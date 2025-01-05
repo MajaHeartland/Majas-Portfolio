@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+$primary-color: linear-gradient(to right, blue, pink);
+$color-secondary: green;
+$color-tertiary: white;
+$color-button: pink;
+
+%btn-placeholder {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  min-width: 150px;
+  text-transform: uppercase;
+  color: $color-tertiary;
+}
+
+@function divide($a, $b) {
+  @return $a / $b;
+}
+
+nav {
+  margin: divide(60, 2) * 1px;
+  background: $primary-color;
+}
+.navigation {
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin-left: 30px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.btn-main {
+  &:link {
+    background-color: $color-secondary;
+  }
+  &:hover {
+    background-color: darken(
+      $color-secondary,
+      15%
+    ); //build-in SASS color function
+  }
+}
+
+button.first {
+  @extend %btn-placeholder;
+  background-color: $color-button;
+}
+
+button.second {
+  @extend %btn-placeholder;
+  background-color: $color-secondary;
+}

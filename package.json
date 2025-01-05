@@ -1,0 +1,22 @@
+{
+  "name": "majas-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss src/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MajaHeartland/Majas-Portfolio.git"
+  },
+  "author": "Maja Heartland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MajaHeartland/Majas-Portfolio/issues"
+  },
+  "homepage": "https://github.com/MajaHeartland/Majas-Portfolio#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
