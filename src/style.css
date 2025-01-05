@@ -60,7 +60,7 @@ section.hero {
 .hero-image-wrapper {
   position: absolute;
   top: 20px;
-  right: 50px; /* Center align the image */
+  right: 50px;
 }
 
 .hero-image-wrapper img {
