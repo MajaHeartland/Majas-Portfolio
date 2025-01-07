@@ -1,9 +1,10 @@
-html {
+body {
   background: linear-gradient(to top right, #201023, #000000);
   min-height: 100vh;
   font-size: 16px;
   color: white;
   box-sizing: border-box;
+  font-family: "Inter", serif;
 }
 
 /* Hero Section */
@@ -29,7 +30,6 @@ h2 {
 }
 
 h3 {
-  font-family: "Inter", serif;
   font-size: 1.3rem;
   line-height: 150%;
   opacity: 50%;
