@@ -1,3 +1,10 @@
+/* Primary: #201023 (dark purple background).
+Accent: #FF2458 (for buttons and links).
+Text: Use #FFFFFF for main text.
+Typography:
+Main font: Inter (for text).
+Code font: Source Code Pro (for headings or emphasis). */
+
 body {
   background: linear-gradient(to top right, #201023 43%, #000000 80%);
   font-size: 16px;
@@ -22,16 +29,20 @@ h2 {
 h1 {
   font-size: 3.5rem;
   letter-spacing: 5%;
+  animation: moveInLeft 1.5s ease-out;
 }
 
 h2 {
   font-size: 2.3rem;
+  animation: moveInRight 1.5s ease-out;
 }
 
 h3 {
   font-size: 1.3rem;
   line-height: 150%;
-  opacity: 50%;
+  animation: fadeIn 1.5s ease-out 1s;
+  color: rgb(255, 255, 255, 0.5);
+  animation-fill-mode: backwards;
 }
 
 h4 {
@@ -48,6 +59,7 @@ header.hero {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  backface-visibility: hidden;
 }
 
 .hero-text-wrapper {
@@ -61,6 +73,8 @@ header.hero {
   top: 20px;
   right: 60px;
   z-index: 2;
+  animation: fadeIn 2s ease-out;
+  animation-fill-mode: backwards;
 }
 
 .hero-image-wrapper img {
@@ -131,5 +145,39 @@ header.hero {
 @media (max-width: 550px) {
   h1 {
     font-size: 3rem;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
