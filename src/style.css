@@ -1,5 +1,5 @@
 /* Primary: #201023 (dark purple background).
-Accent: #FF2458 (for buttons and links).
+Accent: #F00039 (for buttons and links).
 Text: Use #FFFFFF for main text.
 Typography:
 Main font: Inter (for text).
@@ -35,6 +35,9 @@ h1 {
 h2 {
   font-size: 2.3rem;
   animation: moveInRight 1.5s ease-out;
+  background: linear-gradient(to right, #ff7eb3, #ff758c, #ff6f61);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h3 {
@@ -98,16 +101,31 @@ header.hero {
   z-index: -1;
 }
 
-.hero .line {
+.btn:link,
+.btn:visited {
+  position: relative;
+  font-family: "Source Code Pro", serif;
   display: inline-block;
-  width: 99px;
-  height: 1px;
-  background-color: #fff;
-  border-radius: 30px;
-  margin: 90px 0;
+  padding: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 100px;
+  margin: 80px 0;
+  color: #fff;
+  cursor: pointer;
 }
 
-@media (max-width: 1280px) {
+.btn:active {
+  top: 1px;
+}
+
+.btn-primary {
+  background-color: rgb(255, 0, 60);
+  box-shadow: 0 5px 10px rgba(255, 0, 60, 0.4);
+}
+
+@media (max-width: 1200px) {
   .hero-image-wrapper {
     top: 0;
     left: 452px;
@@ -120,7 +138,6 @@ header.hero {
   }
 
   .hero-image-wrapper {
-    top: -50px;
     left: 350px;
   }
 }
