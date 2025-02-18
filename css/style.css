@@ -44,6 +44,16 @@ body {
     opacity: 1;
   }
 }
+@keyframes fadeIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 /* Primary: #201023 (dark purple background).
 Accent: #F00039 (for buttons and links).
 Text: Use #FFFFFF for main text.
@@ -100,6 +110,10 @@ body {
   .heading-secondary {
     font-size: 4rem;
   }
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
 }
 
 .u-center-text {
@@ -169,6 +183,7 @@ body {
 }
 .project__description {
   line-height: 200%;
+  font-size: 1.2rem;
 }
 .project__image-container {
   display: flex;
@@ -251,7 +266,7 @@ body {
   color: #cc0030;
 }
 .popup__title {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #222;
 }
@@ -300,16 +315,6 @@ body {
   transform: scale(1.05);
 }
 
-@keyframes fadeIn {
-  from {
-    transform: scale(0.95);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 @media (max-width: 600px) {
   .popup__content {
     width: 95%;

@@ -55,7 +55,7 @@
   }
 
   &__title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: #222;
   }
@@ -110,18 +110,6 @@
         transform: scale(1.05);
       }
     }
-  }
-}
-
-// Fade-in animation
-@keyframes fadeIn {
-  from {
-    transform: scale(0.95);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
   }
 }
 
