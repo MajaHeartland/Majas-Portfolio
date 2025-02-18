@@ -8,6 +8,13 @@
   padding: 50px 30px;
   text-align: center;
 
+  &__line {
+    width: 80%;
+    max-width: 1280px;
+    height: 1px;
+    background-color: rgba($color-white, 0.2);
+  }
+
   &__email-link {
     text-decoration: none;
     color: #fff;
