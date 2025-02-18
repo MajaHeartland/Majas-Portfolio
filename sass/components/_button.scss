@@ -1,0 +1,25 @@
+.btn {
+  &:link,
+  &:visited {
+    position: relative;
+    font-family: "Source Code Pro", serif;
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 100px;
+    margin: 80px 0;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.btn:active {
+  top: 1px;
+}
+
+.btn-primary {
+  background-color: $color-primary;
+}

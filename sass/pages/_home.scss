@@ -1,0 +1,26 @@
+.background-bubble {
+  background-image: radial-gradient(
+    ellipse farthest-side,
+    rgba(93, 0, 255, 0.15),
+    transparent
+  );
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.section-projects {
+  padding: 6rem 14rem;
+  margin: 0 auto;
+  max-width: 1160px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
