@@ -19,24 +19,30 @@ body {
     display: block;
     font-size: 5rem;
     letter-spacing: 5%;
+    -webkit-animation: moveInLeft 1.5s ease-out;
     animation: moveInLeft 1.5s ease-out;
   }
 
   &--sub {
     display: block;
     font-size: 3rem;
+    -webkit-animation: moveInRight 1.5s ease-out;
     animation: moveInRight 1.5s ease-out;
     background: linear-gradient(to right, #ff7eb3, #ff758c, #ff6f61);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 }
 
 .intro-text {
   font-size: 1.6rem;
   line-height: 150%;
+  -webkit-animation: fadeIn 1.5s ease-out 1s;
   animation: fadeIn 1.5s ease-out 1s;
   color: rgba(255, 255, 255, 0.5);
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
 }
 
