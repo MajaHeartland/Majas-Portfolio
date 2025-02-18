@@ -408,6 +408,11 @@ body {
   font-size: 1.6rem;
   letter-spacing: 2px;
   font-weight: 200;
+  transition: color 0.1s ease-in-out;
+}
+.footer__email-link:hover {
+  color: #69428a;
+  font-weight: 400;
 }
 @media (max-width: 400px) {
   .footer__email-link {

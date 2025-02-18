@@ -25,6 +25,12 @@
     font-size: 1.6rem;
     letter-spacing: 2px;
     font-weight: 200;
+    transition: color 0.1s ease-in-out;
+
+    &:hover {
+      color: $color-secondary;
+      font-weight: 400;
+    }
 
     @media (max-width: 400px) {
       font-size: 1.2rem;
