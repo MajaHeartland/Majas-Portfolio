@@ -1,0 +1,32 @@
+.footer {
+  font-family: "Source Code Pro";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 50px 30px;
+  text-align: center;
+
+  &__email-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    font-weight: 200;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__icon {
+    width: 4em;
+    height: 4em;
+  }
+
+  &__paragraph {
+    font-size: 1.2rem;
+  }
+}
