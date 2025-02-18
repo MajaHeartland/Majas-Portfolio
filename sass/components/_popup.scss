@@ -66,7 +66,7 @@
     max-height: 250px;
     object-fit: cover;
     border-radius: 8px;
-    border: 1px solid #69428a;
+    border: 1px solid $color-secondary;
   }
 
   &__description {
@@ -102,11 +102,11 @@
     }
 
     &--code {
-      background: #69428a;
+      background: $color-secondary;
       color: #fff;
 
       &:hover {
-        background: #69428a;
+        background: $color-secondary;
         transform: scale(1.05);
       }
     }

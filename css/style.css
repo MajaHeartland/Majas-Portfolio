@@ -469,6 +469,10 @@ body {
 .navbar__link {
   text-decoration: none;
   color: #cccccc;
+  transition: color 0.2s;
+}
+.navbar__link:hover {
+  color: #69428a;
 }
 
 .background-bubble {
