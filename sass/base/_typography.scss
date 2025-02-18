@@ -6,11 +6,12 @@ Main font: Inter (for text).
 Code font: Source Code Pro (for headings or emphasis). */
 body {
   // font-size: 16px;
-  color: white;
+  color: $color-white;
   font-family: "Inter", serif;
 }
 
-.heading-primary {
+.heading-primary,
+.heading-tertiary {
   font-family: "Source Code Pro", serif;
   font-weight: 600;
   text-transform: uppercase;

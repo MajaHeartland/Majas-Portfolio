@@ -15,7 +15,35 @@
   </head>
   <body>
     <span class="background-bubble">&nbsp;</span>
-    <header class="header">
+    <div class="navbar__container">
+      <div class="navbar__box">
+        <nav class="navbar">
+          <div class="navbar__logo">
+            <p class="navbar__title">Maja Heartland</p>
+            <p class="navbar__subtitle">Web Developer</p>
+          </div>
+          <div class="navbar__tabs">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a class="navbar__link" href="#section-header">Home</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#section-projects">Projects</a>
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href="#section-footer">Contact</a>
+              </li>
+            </ul>
+            <div class="navbar__hamburger" onclick="toggleMenu()">
+              <span class="navbar__line"></span>
+              <span class="navbar__line"></span>
+              <span class="navbar__line"></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <header class="header" id="section-header">
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--main">Maja Heartland</span>
@@ -200,7 +228,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="section-footer">
       <span class="footer__line"></span>
       <a
         href="mailto:maja.heartland@outlook.com"

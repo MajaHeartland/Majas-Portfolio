@@ -1,5 +1,4 @@
 .footer {
-  font-family: "Source Code Pro";
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,6 +19,7 @@
   }
 
   &__email-link {
+    font-family: "Source Code Pro";
     text-decoration: none;
     color: #fff;
     font-size: 1.6rem;
