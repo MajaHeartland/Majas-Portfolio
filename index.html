@@ -11,27 +11,248 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="hero">
-      <span class="background-bubble"></span>
-      <div class="hero-text-wrapper">
-        <h1>Maja Heartland</h1>
-        <h2>Web Developer</h2>
-        <a href="#" class="btn btn-primary">Jump to projects</a>
-        <h3>
+    <span class="background-bubble">&nbsp;</span>
+    <header class="header">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Maja Heartland</span>
+          <span class="heading-primary--sub">Web developer</span>
+        </h1>
+        <a href="#section-projects" class="btn btn-primary">Jump to projects</a>
+        <p class="intro-text">
           Aspiring front-end developer passionate about combining creativity and
           code to make a positive impact.
-        </h3>
+        </p>
       </div>
-      <div class="hero-image-wrapper">
+      <div class="header__image-wrapper">
         <img
-          src="src/img/Hero image.png"
-          alt="Portrait of Maja Heartland, a web developer."
+          class="header__photo"
+          src="img/Hero image.png"
+          alt="Photo of Maja Heartland"
         />
       </div>
     </header>
+    <main>
+      <section class="section-projects" id="section-projects">
+        <h2 class="heading-secondary u-center-text">Projects</h2>
+        <div class="project">
+          <div class="project__content">
+            <h3 class="heading-tertiary">React dictionary</h3>
+            <p class="project__description">
+              This dictionary was built as part of the SheCodes React Bootcamp
+              using the JS React library. Working on this project helped me
+              solidify my understanding of core React concepts, such as states,
+              event listeners, array mapping, API integration, and storing input
+              data.
+            </p>
+            <a class="project__btn" onclick="openPopup()">Learn more</a>
+          </div>
+          <div class="project__image-container">
+            <img
+              src="img/dictionary-image.jpg"
+              alt="Project Image"
+              class="project__image"
+            />
+          </div>
+        </div>
+        <div class="project project--reverse">
+          <div class="project__content">
+            <h3 class="heading-tertiary">Memory Card Game</h3>
+            <p class="project__description">
+              A memory card game used in NOW Music's promotional campaign built
+              with HTML, CSS3, and Vanilla Java Script. This app was a really
+              fun way for me to improve my coding skills whilst engaging NOW
+              fans. It helped broaden my understanding of conditional rendering.
+            </p>
+            <a class="project__btn" onclick="openPopup()">Learn more</a>
+          </div>
+          <div class="project__image-container">
+            <img
+              src="img/now-image.jpg"
+              alt="Project Image"
+              class="project__image"
+            />
+          </div>
+        </div>
+        <div class="project">
+          <div class="project__content">
+            <h3 class="heading-tertiary">AI Inspirational Quote Generator</h3>
+            <p class="project__description">
+              A memory card game used in NOW Music's promotional campaign built
+              with HTML, CSS3, and Vanilla Java Script.
+            </p>
+            <a class="project__btn" onclick="openPopup()">Learn more</a>
+          </div>
+          <div class="project__image-container">
+            <img
+              src="img/quote-generator-image.jpg"
+              alt="Project Image"
+              class="project__image"
+            />
+          </div>
+        </div>
+        <div class="project project--reverse">
+          <div class="project__content">
+            <h3 class="heading-tertiary">Advanced CSS/SASS Project</h3>
+            <p class="project__description">
+              A memory card game used in NOW Music's promotional campaign built
+              with HTML, CSS3, and Vanilla Java Script. This app was a really
+              fun way for me to improve my coding skills whilst engaging NOW
+              fans. It helped broaden my understanding of conditional rendering.
+            </p>
+            <a class="project__btn" onclick="openPopup()">Learn more</a>
+          </div>
+          <div class="project__image-container">
+            <img
+              src="img/now-image.jpg"
+              alt="Project Image"
+              class="project__image"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__text-box">
+        <a href="mailto:maja.heartland@outlook.com" target="_blank"
+          >maja.heartland@outlook.com</a
+        >
+        <div class="icons">
+          <svg
+            width="66"
+            height="66"
+            viewBox="0 0 66 66"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25.7893 57.757C25.7862 57.3775 25.7831 55.7337 25.78 54.1951L25.7769 52.5967C18.8376 53.5403 17.1577 48.6985 17.1392 48.647C16.176 46.205 14.8591 45.5068 14.8024 45.4779L14.6745 45.4037C14.197 45.0778 12.9306 44.2105 13.2905 43.07C13.6154 42.0418 14.8745 41.9356 15.4469 41.9542C18.617 42.1759 20.2216 45.0252 20.2876 45.1459C21.9056 47.9189 24.3755 47.6322 25.9687 47.0475C26.1172 46.338 26.3472 45.6863 26.6483 45.1108C21.5375 44.2044 15.747 41.486 15.747 31.5973C15.747 28.882 16.5926 26.4823 18.2643 24.4518C17.891 23.2081 17.4661 20.6712 18.7242 17.4754L18.9036 17.0196L19.3698 16.8711C19.7988 16.7298 22.1418 16.2276 26.9587 19.3801C28.947 18.8707 31.0518 18.6077 33.2225 18.5974C35.4036 18.6077 37.5105 18.8707 39.5029 19.3801C44.3157 16.2265 46.6535 16.735 47.0836 16.8711L47.5487 17.0206L47.7281 17.4744C48.9914 20.6692 48.5665 23.2071 48.1932 24.4518C49.8618 26.4761 50.7074 28.8769 50.7074 31.5973C50.7074 41.488 44.9107 44.1982 39.7885 45.0933C40.3691 46.1916 40.6836 47.5704 40.6836 49.0925C40.6836 50.8281 40.6764 56.5216 40.6682 57.757L38.6057 57.7426C38.6139 56.5092 38.6211 50.825 38.6211 49.0914C38.6211 46.5731 37.6487 45.4594 37.229 45.0964L35.4449 43.5526L37.79 43.2917C43.1576 42.6956 48.6439 40.8384 48.6439 31.5963C48.6439 29.1935 47.8426 27.099 46.2617 25.3717L45.8182 24.888L46.0678 24.2827C46.239 23.8691 46.9897 21.7644 46.0235 18.8263C45.2418 18.8727 43.3752 19.2409 40.2649 21.3498L39.869 21.6169L39.41 21.49C37.4888 20.9559 35.349 20.6692 33.2215 20.6589C31.1054 20.6692 28.9686 20.9559 27.0505 21.49L26.5916 21.6169L26.1966 21.3498C23.0833 19.2419 21.2126 18.8707 20.4278 18.8243C19.4636 21.7644 20.2154 23.8691 20.3866 24.2827L20.6361 24.888L20.1937 25.3717C18.6097 27.1052 17.8074 29.1997 17.8074 31.5963C17.8074 40.8342 23.2834 42.7029 28.6397 43.3123L30.962 43.5763L29.2007 45.1129C28.817 45.448 28.1385 46.2596 27.9075 47.9251L27.8301 48.4913L27.3083 48.7254C25.946 49.3359 21.2869 50.9549 18.4932 46.1627C18.4777 46.1369 17.9322 45.1882 16.9443 44.557C17.6105 45.216 18.422 46.2823 19.0769 47.9468C19.145 48.1427 20.4763 51.682 26.5844 50.3589L27.8281 50.0887L27.8405 54.191C27.8435 55.7245 27.8466 57.3631 27.8497 57.7426L25.7893 57.757Z"
+              fill="url(#paint0_linear_231_150)"
+            />
+            <path
+              d="M33 59.8125C18.215 59.8125 6.1875 47.785 6.1875 33C6.1875 18.215 18.215 6.1875 33 6.1875C47.785 6.1875 59.8125 18.215 59.8125 33C59.8125 47.785 47.785 59.8125 33 59.8125ZM33 8.25C19.3535 8.25 8.25 19.3535 8.25 33C8.25 46.6465 19.3535 57.75 33 57.75C46.6465 57.75 57.75 46.6465 57.75 33C57.75 19.3535 46.6465 8.25 33 8.25Z"
+              fill="url(#paint1_linear_231_150)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_231_150"
+                x1="50.7074"
+                y1="37.6579"
+                x2="13.2271"
+                y2="37.6579"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#954694" />
+                <stop offset="1" stop-color="#5F4289" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_231_150"
+                x1="59.8125"
+                y1="33.5257"
+                x2="6.1875"
+                y2="33.5257"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#954694" />
+                <stop offset="1" stop-color="#5F4289" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <svg
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M22 48V26H16V48H22Z"
+              fill="url(#paint0_linear_231_145)"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M19.3581 22.9999C21.8701 22.9999 23.4341 21.5259 23.4341 19.4459C23.3871 17.3199 21.8701 15.7969 19.4061 15.7969C16.9411 15.7969 15.3301 17.2719 15.3301 19.3979C15.3301 21.4779 16.8931 22.9999 19.3111 22.9999H19.3581Z"
+              fill="url(#paint1_linear_231_145)"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M26.946 48H34V35.911C34 35.263 34.122 34.616 34.313 34.153C34.833 32.858 36.19 31.518 38.18 31.518C40.787 31.518 42.001 33.506 42.001 36.419V48H48.001V35.588C48.001 28.931 44.916 26.09 40.175 26.09C36.289 26.09 35.051 28 34.103 30H34V26H26.946C27.041 28 26.771 48 26.771 48H26.946Z"
+              fill="url(#paint2_linear_231_145)"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M50 57H14C10.141 57 7 53.859 7 50V14C7 10.141 10.141 7 14 7H50C53.859 7 57 10.141 57 14V50C57 53.859 53.859 57 50 57ZM14 9C11.243 9 9 11.243 9 14V50C9 52.757 11.243 55 14 55H50C52.757 55 55 52.757 55 50V14C55 11.243 52.757 9 50 9H14Z"
+              fill="url(#paint3_linear_231_145)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_231_145"
+                x1="19"
+                y1="24.858"
+                x2="19"
+                y2="49.041"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#6DC7FF" />
+                <stop offset="1" stop-color="#E6ABFF" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_231_145"
+                x1="19.3821"
+                y1="15.4229"
+                x2="19.3821"
+                y2="23.3409"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#6DC7FF" />
+                <stop offset="1" stop-color="#E6ABFF" />
+              </linearGradient>
+              <linearGradient
+                id="paint2_linear_231_145"
+                x1="37.386"
+                y1="14.125"
+                x2="37.386"
+                y2="49.525"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#6DC7FF" />
+                <stop offset="1" stop-color="#E6ABFF" />
+              </linearGradient>
+              <linearGradient
+                id="paint3_linear_231_145"
+                x1="57"
+                y1="32.4902"
+                x2="7"
+                y2="32.4902"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#954694" />
+                <stop offset="1" stop-color="#5F4289" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </footer>
+    <div class="popup" id="popup" onclick="closePopup(event)">
+      <div class="popup__content" onclick="event.stopPropagation()">
+        <span class="popup__close" onclick="closePopup(event)">&times;</span>
+        <img src="project-image.jpg" alt="Project Image" class="popup__image" />
+        <p class="popup__description">
+          Detailed project information goes here.
+        </p>
+        <button class="popup__btn popup__btn--view">View Project</button>
+        <button class="popup__btn popup__btn--code">View Code</button>
+      </div>
+    </div>
     <script src="src/app.js"></script>
   </body>
 </html>

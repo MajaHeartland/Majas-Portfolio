@@ -1,0 +1,49 @@
+/* Primary: #201023 (dark purple background).
+Accent: #F00039 (for buttons and links).
+Text: Use #FFFFFF for main text.
+Typography:
+Main font: Inter (for text).
+Code font: Source Code Pro (for headings or emphasis). */
+body {
+  // font-size: 16px;
+  color: white;
+  font-family: "Inter", serif;
+}
+
+.heading-primary {
+  font-family: "Source Code Pro", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &--main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 5%;
+    animation: moveInLeft 1.5s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 3rem;
+    animation: moveInRight 1.5s ease-out;
+    background: linear-gradient(to right, #ff7eb3, #ff758c, #ff6f61);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.intro-text {
+  font-size: 1.6rem;
+  line-height: 150%;
+  animation: fadeIn 1.5s ease-out 1s;
+  color: rgba(255, 255, 255, 0.5);
+  animation-fill-mode: backwards;
+}
+
+.heading-secondary {
+  font-family: "Source Code Pro";
+  font-weight: 400;
+  font-size: 6rem;
+  margin-bottom: 10rem;
+  text-transform: uppercase;
+}

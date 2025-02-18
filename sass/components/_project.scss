@@ -1,0 +1,62 @@
+.project {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 3rem;
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 0.15);
+
+    border-radius: 0.5rem;
+    height: auto; // Let it grow based on content
+    width: 80%;
+  }
+
+  &__description {
+    line-height: 200%;
+  }
+
+  &__image-container {
+    display: flex;
+    align-items: stretch; // Make sure it stretches to the height of content
+    height: 100%; // Ensures it takes full height of `.project__content`
+    max-width: 200px;
+  }
+
+  &__image {
+    width: auto; // Maintain aspect ratio
+    max-width: 100%; // Limit maximum width
+    height: 100%; // Match the container's height
+    object-fit: contain; // Ensures it fills the space without distortion
+    border: solid 1px #fff;
+    box-shadow: 0 0 1rem rgb(255, 255, 255, 0.15);
+    border-radius: 0.5rem;
+  }
+
+  .project__btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: $color-primary;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+
+    &:hover {
+      background: #0056b3;
+    }
+  }
+}
