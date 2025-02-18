@@ -388,6 +388,11 @@ body {
   letter-spacing: 2px;
   font-weight: 200;
 }
+@media (max-width: 400px) {
+  .footer__email-link {
+    font-size: 1.2rem;
+  }
+}
 .footer__icons {
   display: flex;
   gap: 1rem;
