@@ -90,6 +90,11 @@ body {
   margin-bottom: 10rem;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  .heading-secondary {
+    font-size: 4rem;
+  }
+}
 
 .u-center-text {
   text-align: center !important;
@@ -132,6 +137,11 @@ body {
 .project--reverse {
   flex-direction: row-reverse;
 }
+@media (max-width: 700px) {
+  .project {
+    flex-direction: column;
+  }
+}
 .project__content {
   display: flex;
   flex-direction: column;
@@ -144,6 +154,12 @@ body {
   border-radius: 0.5rem;
   height: auto;
   width: 80%;
+}
+@media (max-width: 900px) {
+  .project__content {
+    width: 100%;
+    gap: 2rem;
+  }
 }
 .project__description {
   line-height: 200%;
@@ -405,6 +421,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+@media (max-width: 600px) {
+  .section-projects {
+    padding: 5rem 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

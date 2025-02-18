@@ -46,4 +46,8 @@ body {
   font-size: 6rem;
   margin-bottom: 10rem;
   text-transform: uppercase;
+
+  @media (max-width: 500px) {
+    font-size: 4rem;
+  }
 }
