@@ -3,6 +3,10 @@
   width: 100%;
   max-width: 1280px;
 
+  @media (max-width: 600px) {
+    display: none;
+  }
+
   &__box {
     display: flex;
     justify-content: center;
