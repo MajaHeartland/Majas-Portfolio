@@ -37,7 +37,8 @@
       color: $color-secondary;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $color-secondary;
       font-weight: 400;
     }

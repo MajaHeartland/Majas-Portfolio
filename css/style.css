@@ -134,7 +134,7 @@ body {
   cursor: pointer;
   transition: background 0.3s;
 }
-.btn:link:hover, .btn:visited:hover {
+.btn:link:hover, .btn:link:focus, .btn:visited:hover, .btn:visited:focus {
   background: #69428a;
 }
 
@@ -211,7 +211,7 @@ body {
   border-radius: 4px;
   transition: background 0.3s;
 }
-.project .project__btn:hover {
+.project .project__btn:hover, .project .project__btn:focus {
   background: #69428a;
 }
 
@@ -263,7 +263,7 @@ body {
   color: #333;
   transition: color 0.2s ease;
 }
-.popup__close:hover {
+.popup__close:hover, .popup__close:focus {
   color: #cc0030;
 }
 .popup__title {
@@ -303,7 +303,7 @@ body {
   color: #000;
   border: 1px solid #cc0030;
 }
-.popup__btn--view:hover {
+.popup__btn--view:hover, .popup__btn--view:focus {
   background: #cc0030;
   transform: scale(1.05);
 }
@@ -311,7 +311,7 @@ body {
   background: #69428a;
   color: #fff;
 }
-.popup__btn--code:hover {
+.popup__btn--code:hover, .popup__btn--codefocus {
   background: #69428a;
   transform: scale(1.05);
 }
@@ -421,7 +421,7 @@ body {
 .footer__link--github {
   color: #69428a;
 }
-.footer__link:hover {
+.footer__link:hover, .footer__link:focus {
   color: #69428a;
   font-weight: 400;
 }
@@ -487,7 +487,7 @@ body {
   color: #cccccc;
   transition: color 0.2s;
 }
-.navbar__link:hover {
+.navbar__link:hover, .navbar__link:focus {
   color: #69428a;
 }
 

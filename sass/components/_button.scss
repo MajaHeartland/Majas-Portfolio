@@ -15,7 +15,8 @@
     cursor: pointer;
     transition: background 0.3s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: $color-secondary;
     }
   }
