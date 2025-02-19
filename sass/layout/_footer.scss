@@ -18,22 +18,28 @@
     }
   }
 
-  &__email-link {
-    font-family: "Source Code Pro";
+  &__link {
     text-decoration: none;
     color: #fff;
-    font-size: 1.6rem;
-    letter-spacing: 2px;
-    font-weight: 200;
     transition: color 0.1s ease-in-out;
+
+    &--email {
+      font-family: "Source Code Pro";
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+
+      @media (max-width: 400px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    &--github {
+      color: $color-secondary;
+    }
 
     &:hover {
       color: $color-secondary;
       font-weight: 400;
-    }
-
-    @media (max-width: 400px) {
-      font-size: 1.2rem;
     }
   }
 

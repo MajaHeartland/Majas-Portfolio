@@ -403,23 +403,27 @@ body {
     width: 100%;
   }
 }
-.footer__email-link {
-  font-family: "Source Code Pro";
+.footer__link {
   text-decoration: none;
   color: #fff;
-  font-size: 1.6rem;
-  letter-spacing: 2px;
-  font-weight: 200;
   transition: color 0.1s ease-in-out;
 }
-.footer__email-link:hover {
-  color: #69428a;
-  font-weight: 400;
+.footer__link--email {
+  font-family: "Source Code Pro";
+  font-size: 1.6rem;
+  letter-spacing: 2px;
 }
 @media (max-width: 400px) {
-  .footer__email-link {
+  .footer__link--email {
     font-size: 1.2rem;
   }
+}
+.footer__link--github {
+  color: #69428a;
+}
+.footer__link:hover {
+  color: #69428a;
+  font-weight: 400;
 }
 .footer__icons {
   display: flex;
