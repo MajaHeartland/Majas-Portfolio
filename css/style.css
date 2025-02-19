@@ -161,6 +161,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 }
 .project__content {
@@ -213,6 +214,11 @@ body {
 }
 .project .project__btn:hover, .project .project__btn:focus {
   background: #69428a;
+}
+@media (max-width: 700px) {
+  .project .project__btn {
+    margin: 0 auto;
+  }
 }
 
 .popup {
