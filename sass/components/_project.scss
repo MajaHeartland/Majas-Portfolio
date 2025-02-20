@@ -38,6 +38,10 @@
   &__description {
     line-height: 200%;
     font-size: 1.2rem;
+
+    @media (min-width: 900px) {
+      font-size: 1.6rem;
+    }
   }
 
   &__image-container {

@@ -191,6 +191,11 @@ body {
   line-height: 200%;
   font-size: 1.2rem;
 }
+@media (min-width: 900px) {
+  .project__description {
+    font-size: 1.6rem;
+  }
+}
 .project__image-container {
   display: flex;
   align-items: stretch;
