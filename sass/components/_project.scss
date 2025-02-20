@@ -46,22 +46,25 @@
 
   &__image-container {
     display: flex;
-    align-items: stretch; // Make sure it stretches to the height of content
-    height: 100%; // Ensures it takes full height of `.project__content`
+    align-items: stretch;
+    height: 100%;
     max-width: 200px;
   }
 
+  &__link {
+    height: 100%;
+  }
+
   &__image {
-    width: auto; // Maintain aspect ratio
-    max-width: 100%; // Limit maximum width
-    height: 100%; // Match the container's height
-    object-fit: contain; // Ensures it fills the space without distortion
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
     border: solid 1px #fff;
     box-shadow: 0 0 1rem rgb(255, 255, 255, 0.15);
     border-radius: 0.5rem;
   }
 
-  .project__btn {
+  &__btn {
     padding: 0.75rem 1.5rem;
     border: none;
     background: $color-primary;

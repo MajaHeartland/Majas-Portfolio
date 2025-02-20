@@ -7,10 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const popupProjectBtn = popup.querySelector(".popup__btn--view");
   const popupCodeBtn = popup.querySelector(".popup__btn--code");
   const popupClose = popup.querySelector(".popup__close");
-  const projectButtons = document.querySelectorAll(".project__btn");
+  const popupOpeners = document.querySelectorAll(".popup-opener");
 
-  projectButtons.forEach((button) => {
-    button.addEventListener("click", function () {
+  popupOpeners.forEach((button) => {
+    button.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent scrolling to href target
+
       // Get additional project details from data attributes
       const title = button.getAttribute("data-title");
       const image = button.getAttribute("data-image");
@@ -27,6 +29,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Show popup
       popup.classList.add("popup--active");
+    });
+
+    button.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault(); // Prevent scrolling when using keyboard navigation
+        button.click();
+      }
     });
   });
 
