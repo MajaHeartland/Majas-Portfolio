@@ -5,7 +5,6 @@ Typography:
 Main font: Inter (for text).
 Code font: Source Code Pro (for headings or emphasis). */
 body {
-  // font-size: 16px;
   color: $color-white;
   font-family: "Inter", serif;
 }
@@ -17,9 +16,9 @@ body {
   text-transform: uppercase;
 
   &--main {
+    letter-spacing: 0.5rem;
     display: block;
     font-size: 5rem;
-    letter-spacing: 5%;
     -webkit-animation: moveInLeft 1.5s ease-out;
     animation: moveInLeft 1.5s ease-out;
   }
@@ -53,6 +52,7 @@ body {
   font-size: 6rem;
   margin-bottom: 10rem;
   text-transform: uppercase;
+  letter-spacing: 0.3rem;
 
   @media (max-width: 500px) {
     font-size: 4rem;
@@ -61,4 +61,5 @@ body {
 
 .heading-tertiary {
   font-size: 1.6rem;
+  letter-spacing: 0.2rem;
 }
