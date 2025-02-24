@@ -63,25 +63,4 @@
     box-shadow: 0 0 1rem rgb(255, 255, 255, 0.15);
     border-radius: 0.5rem;
   }
-
-  &__btn {
-    font-family: "Source Code Pro", serif;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    background: $color-primary;
-    color: white;
-    font-size: 1.4rem;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s;
-
-    &:hover,
-    &:focus {
-      background: $color-secondary;
-    }
-
-    @media (max-width: 700px) {
-      margin: 0 auto;
-    }
-  }
 }

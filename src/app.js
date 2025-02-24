@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const popupTitle = popup.querySelector(".popup__title");
   const popupImage = popup.querySelector(".popup__image");
   const popupDescription = popup.querySelector(".popup__description");
-  const popupProjectBtn = popup.querySelector(".popup__btn--view");
-  const popupCodeBtn = popup.querySelector(".popup__btn--code");
+  const popupProjectBtn = popup.querySelector(".btn--view");
+  const popupCodeBtn = popup.querySelector(".btn--code");
   const popupClose = popup.querySelector(".popup__close");
   const popupOpeners = document.querySelectorAll(".popup-opener");
 
