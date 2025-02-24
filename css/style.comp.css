@@ -95,10 +95,9 @@ body {
 }
 
 .heading-secondary {
-  font-family: "Source Code Pro";
+  font-family: "Source Code Pro", serif;
   font-weight: 400;
   font-size: 6rem;
-  margin-bottom: 10rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
 }
@@ -123,6 +122,10 @@ body {
 
 .u-margin-top-small {
   margin-top: 2rem !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 10rem;
 }
 
 .btn:link, .btn:visited {
@@ -216,6 +219,7 @@ body {
   border-radius: 0.5rem;
 }
 .project__btn {
+  font-family: "Source Code Pro", serif;
   padding: 0.75rem 1.5rem;
   border: none;
   background: #cc0030;
