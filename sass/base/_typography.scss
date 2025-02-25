@@ -41,7 +41,7 @@ body {
   line-height: 150%;
   -webkit-animation: fadeIn 1.5s ease-out 1s;
   animation: fadeIn 1.5s ease-out 1s;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba($color-white, 0.7);
   -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
 }
